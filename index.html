@@ -1,1 +1,94 @@
+<iframe id="result" srcdoc="<!DOCTYPE html>
+<html lang=&quot;en&quot; >
 
+<head>
+  <meta charset=&quot;UTF-8&quot;>
+  
+
+    <link rel=&quot;apple-touch-icon&quot; type=&quot;image/png&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png&quot; />
+
+    <meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;CodePen&quot;>
+
+    <link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico&quot; />
+
+    <link rel=&quot;mask-icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg&quot; color=&quot;#111&quot; />
+
+
+
+  
+  <title>CodePen - Website demo</title>
+    <link rel=&quot;canonical&quot; href=&quot;https://codepen.io/getrally/pen/abRVmWp&quot; />
+  
+  
+  
+  
+<style>
+.checkout-example {
+  max-width: 600px;
+  margin: auto;
+}
+rally-order-summary {
+  border: 1px solid var(--border-color);
+  display: block;
+  border-radius: 4px;
+  margin: 30px 0;
+}
+rally-logo {
+  text-align: center;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate=&quot;no&quot;>
+  <head>
+  <script src=&quot;https://js.onrally.com/elements/elements.js&quot;> </script>
+  <link href=&quot;https://js.onrally.com/elements/styles.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;>
+  </link>
+</head>
+<div class=&quot;checkout-example&quot;>
+  <rally-logo></rally-logo>
+  <rally-order-summary config='{&quot;isExpanded&quot;: true}'></rally-order-summary>
+  <rally-email config='{&quot;heading&quot;: &quot;Email&quot;, &quot;consent&quot;: {&quot;field&quot;: {&quot;hidden&quot;: true}}}'></rally-email>
+  <div class=&quot;rally-shipping-address-block&quot;>
+    <rally-shipping-address config='{&quot;fields&quot;:[{&quot;key&quot;:&quot;company&quot;,&quot;hidden&quot;:true,&quot;validators&quot;:{&quot;required&quot;:{&quot;value&quot;:false}}}]}'></rally-shipping-address>
+  </div>
+  <div class=&quot;rally-credit-card-block rally-mt-4&quot;> <span class=&quot;rally-heading rally-card-information-heading rally-d-none&quot;>Card information</span>
+    <rally-credit-card-payment config='{&quot;style&quot;:{&quot;isExpanded&quot;:true}, &quot;loader&quot;:{&quot;tileCount&quot;: 2, &quot;enableOnBillingSection&quot;: false}, &quot;fields&quot;:[{&quot;key&quot;:&quot;expiryDate&quot;,&quot;label&quot;: &quot;MM/YY&quot;}]}'>
+      <div class=&quot;rally-billing-address-option-block&quot;> <span class=&quot;rally-heading rally-billing-heading rally-d-none&quot;>Billing address</span>
+        <rally-billing-address-option></rally-billing-address-option>
+      </div>
+      <div class=&quot;rally-pay-enroll-block&quot;>
+        <rally-pay-enroll></rally-pay-enroll>
+      </div>
+      <div class=&quot;rally-purchase-block rally-mt-2&quot;>
+        <rally-purchase-button></rally-purchase-button>
+        <div class=&quot;rally-white-space&quot;></div>
+      </div>
+    </rally-credit-card-payment>
+  </div>
+</div>
+    <script src=&quot;https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js&quot;></script>
+
+  
+      <script id=&quot;rendered-js&quot; >
+const config = {
+  customCheckoutFlow: { disableRedirect: true },
+  lineItems: [{ productId: 300, quantity: 1, includeDetails: true }] };
+
+Rally.init(&quot;9382089f-6671-4387-94c5-85a6f7f6fcc7&quot;, config);
+//# sourceURL=pen.js
+    </script>
+
+  
+</body>
+
+</html>
+" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation" allow="accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write" allowtransparency="true" allowpaymentrequest="true" allowfullscreen="true" class="result-iframe">
+      </iframe>
