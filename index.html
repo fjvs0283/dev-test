@@ -35,12 +35,7 @@
 <body>
     <div class="checkout-example">
         <rally-logo></rally-logo>
-        <rally-express-checkout-group
-        config="{"applePay":true,"rallyPay":true,"googlePay":true,"payPalExpress":true,"payPalPayLaterExpress":true}">
-                    </rally-express-checkout-group>
-        
-        
-        
+        <rally-express-checkout-group config='{"showHeading":true,"rallyPay":true}'></rally-express-checkout-group>
         <rally-order-summary config='{"isExpanded": true}'></rally-order-summary>
         <rally-email config='{"heading": "Email", "consent": {"field": {"hidden": true}}}'></rally-email>
         <div class="rally-shipping-address-block">
